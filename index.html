@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift Simulation App</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Lift Simulation</h1>
+
+      <div class="controls">
+        <label for="floor">
+          No of Floors
+          <input class="floor-count" value="5" min="1" type="number" />
+        </label>
+        <label for="lift">
+          No Of Lifts
+          <input class="lift-count" value="2" min="0" type="number" />
+        </label>
+
+        <button id="generate-btn">Generate Simulation</button>
+        <div class="alert"></div>
+      </div>
+
+      <div class="lift-space"></div>
+      <script src="./main.js"></script>
+    </main>
+  </body>
+</html>
